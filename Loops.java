@@ -12,7 +12,7 @@ public class Loops {
     }
 
     /*
-     * @param a
+     * @param a is of integer type
      */
     int withParameter(int a) {
         return a;
