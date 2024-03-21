@@ -11,6 +11,7 @@ public class GrandChild extends ChildClass {
         super(a); // super keyword 1. to call the constructor of immediate parent class
         System.out.println("in grand child " + a);
         classVariable = a + 1000;
+        super.classVariable = classVariable;
         System.out.println("in grand child class Variable " + classVariable);
     }
 

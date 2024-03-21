@@ -8,6 +8,7 @@ public class UserInput {
         int a, b = 20;
         float f;
         char c;
+        String a;
         System.out.println("Enter the value of a");
         a = obj.nextInt();
         System.out.println("Entered valud if a is " + a);
