@@ -3,16 +3,15 @@ import java.util.Scanner;
 public class MoneyProgram {
     public static void main(String args[]) {
         int currencyNotesCount = 4;
-        // Scanner scanner = new Scanner(System.in);
-        // System.out.println("Enter the number of available currency notes");
-        // currencyNotesCount = scanner.nextInt();
-        // int[] currency = new int[currencyNotesCount];
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Enter the number of available currency notes");
+        currencyNotesCount = scanner.nextInt();
+        int[] currency = new int[currencyNotesCount];
 
-        // for (int i = 0; i < currencyNotesCount; i++) {
-        // System.out.println("Enter the currency amount");
-        // currency[i] = scanner.nextInt();
-        // }
-        int[] currency = { 20, 2, 50, 10 };
+        for (int i = 0; i < currencyNotesCount; i++) {
+            System.out.println("Enter the currency amount");
+            currency[i] = scanner.nextInt();
+        }
         for (int i = 0; i < currencyNotesCount; i++) {
             for (int j = 0; j < currencyNotesCount; j++) {
                 System.out.println("currency[i] > currency[j] " + currency[i] + " " + currency[j]);
@@ -36,9 +35,14 @@ public class MoneyProgram {
             if (amountToGive > currency[i]) {
                 notes = amountToGive / currency[i];
                 amountToGive = amountToGive % currency[i];
-
             }
             System.out.println("Notes of " + currency[i] + " = " + notes);
+        }
+
+        if (amountToGive > 0) {
+            for (int i = currencyNotesCount; i > 0; i++) {
+
+            }
         }
 
     }
